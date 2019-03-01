@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0j6-bo-lu3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="bGq-UG-7b3">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" extendedLayoutIncludesOpaqueBars="YES" id="MZq-UA-DRI" customClass="HomeViewController" customModule="AR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qz6-7s-8VZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F3w-hc-ctS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ru2-hT-uYP">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOv-ce-jvd">
+                                        <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrH-da-pQv">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tapHereClicked:" destination="MZq-UA-DRI" eventType="touchUpInside" id="ukU-WU-rwZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="IrH-da-pQv" secondAttribute="bottom" id="L1X-cH-Jgi"/>
+                                            <constraint firstAttribute="width" constant="100" id="QBb-Ih-8JA"/>
+                                            <constraint firstItem="IrH-da-pQv" firstAttribute="leading" secondItem="oOv-ce-jvd" secondAttribute="leading" id="TyG-5A-A3z"/>
+                                            <constraint firstAttribute="trailing" secondItem="IrH-da-pQv" secondAttribute="trailing" id="VXz-RA-ewo"/>
+                                            <constraint firstAttribute="height" constant="100" id="ccD-az-7Si"/>
+                                            <constraint firstItem="IrH-da-pQv" firstAttribute="top" secondItem="oOv-ce-jvd" secondAttribute="top" id="ou9-mu-wcE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oOv-ce-jvd" firstAttribute="centerY" secondItem="F3w-hc-ctS" secondAttribute="centerY" id="5lz-5J-MkI"/>
+                                    <constraint firstItem="ru2-hT-uYP" firstAttribute="leading" secondItem="F3w-hc-ctS" secondAttribute="leading" id="GyS-UG-Nme"/>
+                                    <constraint firstAttribute="bottom" secondItem="ru2-hT-uYP" secondAttribute="bottom" id="JFq-jV-S3k"/>
+                                    <constraint firstAttribute="trailing" secondItem="ru2-hT-uYP" secondAttribute="trailing" id="YLG-wi-twT"/>
+                                    <constraint firstItem="oOv-ce-jvd" firstAttribute="centerX" secondItem="F3w-hc-ctS" secondAttribute="centerX" id="cdL-ng-eeJ"/>
+                                    <constraint firstItem="ru2-hT-uYP" firstAttribute="top" secondItem="F3w-hc-ctS" secondAttribute="top" id="hwY-fT-E4J"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F3w-hc-ctS" firstAttribute="trailing" secondItem="JjB-Ol-LkQ" secondAttribute="trailing" id="RlN-7K-4hV"/>
+                            <constraint firstItem="F3w-hc-ctS" firstAttribute="leading" secondItem="JjB-Ol-LkQ" secondAttribute="leading" id="aj1-x6-Cg4"/>
+                            <constraint firstItem="F3w-hc-ctS" firstAttribute="top" secondItem="qz6-7s-8VZ" secondAttribute="top" id="fiK-h7-EvZ"/>
+                            <constraint firstItem="F3w-hc-ctS" firstAttribute="bottom" secondItem="JjB-Ol-LkQ" secondAttribute="bottom" id="fow-rZ-fbr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JjB-Ol-LkQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FTM-jF-avx"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="actionButton" destination="IrH-da-pQv" id="lgE-Ui-SGn"/>
+                        <outlet property="centerView" destination="oOv-ce-jvd" id="SVK-aq-Grt"/>
+                        <outlet property="homeContainerView" destination="F3w-hc-ctS" id="koh-wD-yg5"/>
+                        <outlet property="subContainerView" destination="ru2-hT-uYP" id="zy9-D8-MBD"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="ARSegueIdentifier" id="npG-7z-L5v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9z-jk-It1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455.19999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ARViewController" id="BYZ-38-t0r" customClass="ARViewController" customModule="AR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81Z-3R-T7m">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="81Z-3R-T7m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FE6-1N-LEo"/>
+                            <constraint firstItem="81Z-3R-T7m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HjG-dd-62V"/>
+                            <constraint firstItem="81Z-3R-T7m" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WPR-ZT-1FX"/>
+                            <constraint firstItem="81Z-3R-T7m" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gxQ-nr-jLb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneKitView" destination="81Z-3R-T7m" id="3sp-c2-9OF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1320.8" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ilg-1S-gNY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0j6-bo-lu3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vXT-kz-A4K">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MZq-UA-DRI" kind="relationship" relationship="rootViewController" id="mJu-SO-msc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zi1-PW-apc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-484" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
